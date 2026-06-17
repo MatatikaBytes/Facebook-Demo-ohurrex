@@ -12,7 +12,10 @@ plugins:
     pip_url: git+https://github.com/Matatika/tap-facebook.git
   - name: tap-facebook
     variant: matatika
-    pip_url: git+https://github.com/Matatika/tap-facebook.git@v0.5.0
+    pip_url: git+https://github.com/Matatika/tap-facebook.git@feature/new-page-videos-endpoint
+    select:
+    - pages.*
+    - page_videos.*
   loaders:
   - name: target-postgres
     variant: matatika
